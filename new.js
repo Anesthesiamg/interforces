@@ -93,7 +93,7 @@ $(document).ready( function(){
 $(document).ready( function(){
 
 $('#bg-image').backstretch([
-"https://www.hizliresim.com/ddg1vw0 "
+"https://i.hizliresim.com/ddg1vw0.jpeg"
 
 ], {duration: 7000, fade: 500});
 
