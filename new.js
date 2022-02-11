@@ -274,6 +274,11 @@ $(document).ready( function(){
 			});
 		};
 	
+		_this.bind = function () {
+			$(window).on('mousemove', function(e){
+				_this.config.position.x = e.pageX;
+				_this.config.position.y = e.pageY;
+			});
 		};
 	
 		_this.init = function () {
@@ -539,27 +544,6 @@ $(document).ready( function(){
 		closeOverlay();
 		  				  
 	});
-	
-
-	$('.overlay').bind('mousewheel', function(e) {
-		if(e.originalEvent.wheelDelta / -120 > 0) {
-			//alert('down');
-		} else {
-			
-				procesfinshedOverlay1();
-				function procesfinshedOverlay1() {
-				  if(overlayStatus == 1) {
-					  closeOverlay();
-					  overlayStatus = 0;
-					  statusforGoTo = 0;
-					  
-				  }else {}
-				}
-		  	
-		}
-
-	});
-
 
 	$('#front-page').bind('mousewheel', function(e) {
 		if(e.originalEvent.wheelDelta / 120 > 0) {
