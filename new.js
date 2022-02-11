@@ -545,23 +545,6 @@ $(document).ready( function(){
 		  				  
 	});
 
-	$('#front-page').bind('mousewheel', function(e) {
-		if(e.originalEvent.wheelDelta / 120 > 0) {
-			//alert('up');
-		} else {
-			
-		    preloadprocessfinshed();
-			function preloadprocessfinshed() {
-			  if(activeOverlays == 1) {
-				  openOverlay();
-				  activeOverlays = 0;
-				  
-			  }else {}
-			}
-		  	
-		}
-
-	});
 	
 	
 	
@@ -579,42 +562,10 @@ $(document).ready( function(){
 	});
 	
 	
-	$('.overlay').bind('mousewheel', function(e) {
-		if(e.originalEvent.wheelDelta / 120 > 0) {
-			//alert('up');
-		} else {
-			
-			processfinshedGoTo();
-			function processfinshedGoTo() {
-			  if(statusforGoTo == 1) {
-				  openOverlayContact();
-				  statusforGoTo = 0;
-				  overlayStatus = 0;
-				  
-			  }else {}
-			}
-		  	
-		}
+
 
 	});
-	
-	$('.overlay-contact').bind('mousewheel', function(e) {
-		if(e.originalEvent.wheelDelta / -120 > 0) {
-			//alert('down');
-		} else {
-			
-		  	procesfinshedOverlayContact1();
-			function procesfinshedOverlayContact1() {
-			  if(overlayContactStatus == 1) {
-				  closeOverlayContact();
-				  overlayContactStatus = 0;
-				  
-			  }else {}
-			}
-			
-		}
 
-	});
 
 	
 });
