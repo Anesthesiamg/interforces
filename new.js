@@ -274,11 +274,6 @@ $(document).ready( function(){
 			});
 		};
 	
-		_this.bind = function () {
-			$(window).on('mousemove', function(e){
-				_this.config.position.x = e.pageX;
-				_this.config.position.y = e.pageY;
-			});
 		};
 	
 		_this.init = function () {
